@@ -2,12 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane,faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane,faUser, faCartShopping,faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import image from 'next/image';
+import images from '../public/oww.jpg'
 
 export default function Home() {
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div className="container">
     <a className="navbar-brand coch" href="#">
     <FontAwesomeIcon icon={faPaperPlane} className="fa-solid plan" /> E-Coaching
@@ -53,7 +55,54 @@ export default function Home() {
     </form>
   </div>
 </nav>
-<h1>hi</h1>
+
+<div class="hero container text-center ">
+  <div class="row align-items-center">
+    <div class="col">
+      <h1 style={{ textAlign: 'left' }}>Take Your <span style={{ color: 'limegreen' }}>Dreams</span> To The Next Level!</h1>
+      <h5 className='mt-4' style={{ textAlign: 'left' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has,</h5>
+      <form className="d-flex" role="search">
+        <input
+          className="form-control me-2 mt-4"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+          <button className="btn btn-outline-success mt-4" type="submit" >
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </button>
+      </form>
+    </div>
+    <div class="col-4 oww">
+    <img src="oww.jpg" width="550px" height="550px" alt="My Image" />
+    </div>
+    <div class="col-4 count">
+      <div>
+      <span ><h3 style={{ color: 'limegreen' }}>100</h3> Subject to choose from</span>
+      <span></span>
+      </div>
+
+      <div className='mt-5'>
+      <span><h3 style={{ color: 'limegreen' }}>120+</h3>Awsome Courses</span>
+      <span></span>
+      </div>
+
+      <div className='mt-5'>
+      <span><h3 style={{ color: 'limegreen' }}>120</h3> Professional Teacher</span>
+      <span></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      <div className='hero2 container'>
+            <h1 className=""style={{ textAlign: 'center' }}>What Our Student Say About Us</h1>
+      </div>
+
+      <div>
+        
+      </div>
     </>
 
   )

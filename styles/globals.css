@@ -49,3 +49,30 @@ a {
   color: rgb(37, 194, 37)!important;
   border-bottom: 2px solid rgb(46, 199, 26);
 }
+
+.hero h1{
+  font-size:50px;
+}
+.hero{
+  margin-top:80px!important;
+}
+
+.oww img{
+  margin-bottom: 200px;
+}
+
+.count span{
+  margin-right: -90px;
+}
+.count h3{
+  margin-right: -165px;
+}
+
+.hero2{
+  width: 450px;
+  position: relative;
+}
+.hero2 h1{
+  position: absolute;
+  text-align: center;
+}
